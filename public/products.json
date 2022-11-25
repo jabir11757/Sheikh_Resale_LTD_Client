@@ -13,7 +13,7 @@
                 "originalPrice": 200000,
                 "condition": "good",
                 "useYear": 2,
-                "postTime": "10: 30",
+                "postTime": "10:30",
                 "mobileNumber": 19876151,
                 "purchaseYear": 2020
             },
@@ -25,7 +25,7 @@
                 "originalPrice": 220000,
                 "condition": "excellent",
                 "useYear": 1,
-                "postTime": " 11: 30",
+                "postTime": " 11:30",
                 "mobileNumber": 19876145,
                 "purchaseYear": 2021
             }
@@ -45,7 +45,7 @@
                 "originalPrice": 350000,
                 "condition": "good",
                 "useYear": 2,
-                "postTime": " 12: 30",
+                "postTime": " 12:30",
                 "mobileNumber": 198761987,
                 "purchaseYear": 2020
             },
@@ -57,7 +57,7 @@
                 "originalPrice": 300000,
                 "condition": "fair",
                 "useYear": 3,
-                "postTime": "11: 40",
+                "postTime": "11:40",
                 "mobileNumber": 19876143,
                 "purchaseYear": 2019
             }
@@ -77,7 +77,7 @@
                 "originalPrice": 800000,
                 "condition": "good",
                 "useYear": 1,
-                "postTime": "10.30",
+                "postTime": "10:30",
                 "mobileNumber": 19876167,
                 "purchaseYear": 2021
             },
@@ -89,7 +89,7 @@
                 "originalPrice": 680000,
                 "condition": "good",
                 "useYear": 2,
-                "postTime": "1: 30",
+                "postTime": "1:30",
                 "mobileNumber": 19876198,
                 "purchaseYear": 2022
             }
