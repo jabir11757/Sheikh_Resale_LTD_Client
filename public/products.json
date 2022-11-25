@@ -1,0 +1,98 @@
+[
+    {
+        "_id": "01",
+        "productId": 1,
+        "picture": "https://i.ibb.co/s9NXF4S/lifan-KPR.jpg",
+        "name": "LIFAN",
+        "product": [
+            {
+                "productName": "KPR 165",
+                "picture": "https://i.ibb.co/gZ1Xd7C/kpr-165.jpg",
+                "location": "Dhaka",
+                "resalePrice": 100000,
+                "originalPrice": 200000,
+                "condition": "good",
+                "useYear": 2,
+                "postTime": "10: 30",
+                "mobileNumber": 19876151,
+                "purchaseYear": 2020
+            },
+            {
+                "productName": "KPR BLACK",
+                "picture": "https://i.ibb.co/CWq9D3P/kpr-black.jpg",
+                "location": "Rangpur",
+                "resalePrice": 150000,
+                "originalPrice": 220000,
+                "condition": "excellent",
+                "useYear": 1,
+                "postTime": " 11: 30",
+                "mobileNumber": 19876145,
+                "purchaseYear": 2021
+            }
+        ]
+    },
+    {
+        "_id": "02",
+        "productId": 2,
+        "picture": "https://i.ibb.co/k8HYK82/yamaha-155.jpg",
+        "name": "YAMAHA",
+        "product": [
+            {
+                "productName": "YAMAHA MT 15",
+                "picture": "https://i.ibb.co/nwRwJj8/Yamaha-MT-15.jpg",
+                "location": "Khulna",
+                "resalePrice": 200000,
+                "originalPrice": 350000,
+                "condition": "good",
+                "useYear": 2,
+                "postTime": " 12: 30",
+                "mobileNumber": 198761987,
+                "purchaseYear": 2020
+            },
+            {
+                "productName": "YAMAHA FZS",
+                "picture": "https://i.ibb.co/NxdhSHq/yamaha-fzs-36.jpg",
+                "location": "Chittagong",
+                "resalePrice": 200000,
+                "originalPrice": 300000,
+                "condition": "fair",
+                "useYear": 3,
+                "postTime": "11: 40",
+                "mobileNumber": 19876143,
+                "purchaseYear": 2019
+            }
+        ]
+    },
+    {
+        "_id": "03",
+        "productId": 3,
+        "picture": "https://i.ibb.co/YW2hKjT/tvs-67.jpg",
+        "name": "TVS",
+        "product": [
+            {
+                "productName": "TVS ZEPPELIN R",
+                "picture": "https://i.ibb.co/TYfK6Xy/TVS-Zeppelin.jpg",
+                "location": "Dhaka",
+                "resalePrice": 500000,
+                "originalPrice": 800000,
+                "condition": "good",
+                "useYear": 1,
+                "postTime": "10.30",
+                "mobileNumber": 19876167,
+                "purchaseYear": 2021
+            },
+            {
+                "productName": "TVS APACHE RR-310",
+                "picture": "https://i.ibb.co/C283cc1/TVS-Apache-RR-310.jpg",
+                "location": "Rajshahi",
+                "resalePrice": 300000,
+                "originalPrice": 680000,
+                "condition": "good",
+                "useYear": 2,
+                "postTime": "1: 30",
+                "mobileNumber": 19876198,
+                "purchaseYear": 2022
+            }
+        ]
+    }
+]

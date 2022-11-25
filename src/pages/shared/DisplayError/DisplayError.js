@@ -1,5 +1,5 @@
 import React from 'react';
-import err from '../../../images/401.jpg'
+import err from '../../../images/404.jpg'
 import { Link, useRouteError } from 'react-router-dom';
 
 const DisplayError = () => {
