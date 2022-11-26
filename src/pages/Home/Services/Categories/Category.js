@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Category = ({ category }) => {
+const Category = ({ category, setItem }) => {
     const { productName, postTime, picture, location, resalePrice, originalPrice, condition, useYear, mobileNumber, purchaseYear } = category;
     return (
         <div className="card w-96 bg-base-100 shadow-xl my-16">
@@ -14,10 +14,9 @@ const Category = ({ category }) => {
                 <h2 className="text-green-600">Use Year: <span className='text-black'>{useYear}</span></h2>
                 <h2 className="text-green-600">Location: <span className='text-black'>{location}</span></h2>
                 <h2 className="text-green-600">Contact: <span className='text-black'>{mobileNumber}</span></h2>
+                <label onClick={() => setItem(category)} htmlFor="booking-modal" className='btn btn-outline btn-success mt-6'>Book Item</label>
             </div>
-            <div className='flex justify-center'>
-                <button className='btn btn-outline btn-success mb-6'>Buy Item</button>
-            </div>
+
             <figure><img src={picture} alt="Shoes" /></figure>
         </div>
     );
