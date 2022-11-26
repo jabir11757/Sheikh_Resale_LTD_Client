@@ -13,10 +13,10 @@ const Login = () => {
     const [logInError, setLogInError] = useState('');
 
 
-    // const location = useLocation();
-    // const navigate = useNavigate();
-    // const from = location.state?.from?.pathname || '/';
-    // navigate(from, { replace: true })
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
+    navigate(from, { replace: true })
 
 
     const handleLogin = (data) => {
@@ -30,6 +30,7 @@ const Login = () => {
                 const user = result.user;
                 console.log(user)
                 toast.success('Logged in successfully!')
+                navigate('/')
             })
             .catch(err => {
                 console.log(err);

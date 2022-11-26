@@ -1,5 +1,5 @@
 import React from 'react';
-import kpr from '../../../images/kpr-black.jpg'
+import kpr from '../../../images/kpr-red.jpg'
 import yamaha from '../../../images/yamaha-155.jpg'
 import tvs from '../../../images/tvs-67.jpg'
 import SliderItem from './SliderItem';

@@ -1,4 +1,5 @@
 import React from 'react';
+import Processes from '../Processes/Processes';
 import Services from '../Services/Services';
 import Slider from '../Slider/Slider';
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Slider />
             <Services />
+            <Processes />
         </div>
     );
 };
