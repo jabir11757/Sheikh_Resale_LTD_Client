@@ -25,13 +25,17 @@ const AddProduct = () => {
                 if (imgData.success) {
                     console.log(imgData.data.url)
                     const product = {
-                        name: data.name,
-                        email: data.email,
+                        name: data.productName,
+                        originalPrice: data.originalPrice,
                         condition: data.condition,
+                        resalePrice: data.resalePrice,
+                        mobileNumber: data.mobileNumber,
+                        location: data.location,
+                        purchaseYear: data.purchaseYear,
                         image: imgData.data.url
                     }
 
-                    fetch('http://localhost:5000/products', {
+                    fetch('http://localhost:5000/addedProducts', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json',
@@ -49,7 +53,7 @@ const AddProduct = () => {
     }
     return (
         <div className='w-96 p-7'>
-            <h2 className='text-3xl'> Add Products</h2>
+            <h2 className='text-2xl text-success font-bold text-center mb-6'> Add Products</h2>
             <form onSubmit={handleSubmit(handleAddProduct)}>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Product Name</span> </label>
@@ -61,14 +65,14 @@ const AddProduct = () => {
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Original Price</span> </label>
                     <input type="text" {...register("originalPrice", {
-                        required: "Email is required"
+                        required: "Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.originalPrice && <p className='text-red-600'>{errors.originalPrice?.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Resale Price</span> </label>
                     <input type="text" {...register("resalePrice", {
-                        required: "Email is required"
+                        required: "Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.resalePrice && <p className='text-red-600'>{errors.resalePrice?.message}</p>}
                 </div>
@@ -85,21 +89,21 @@ const AddProduct = () => {
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Mobile Number</span> </label>
                     <input type="text" {...register("mobileNumber", {
-                        required: "Email is required"
+                        required: "Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.mobileNumber && <p className='text-red-600'>{errors.mobileNumber?.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Location</span> </label>
                     <input type="text" {...register("location", {
-                        required: "Email is required"
+                        required: "Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.location && <p className='text-red-600'>{errors.location?.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"><span className="label-text">Purchase Year</span> </label>
                     <input type="text" {...register("purchaseYear", {
-                        required: "Email is required"
+                        required: "Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.purchaseYear && <p className='text-red-600'>{errors.purchaseYear?.message}</p>}
                 </div>
@@ -110,7 +114,7 @@ const AddProduct = () => {
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.image && <p className='text-red-600'>{errors.image?.message}</p>}
                 </div>
-                <input className='btn btn-accent mt-5 w-full' value='Add Product' type='submit' />
+                <input className='btn btn-success mt-5 w-full' value='Add Product' type='submit' />
             </form>
         </div>
     );

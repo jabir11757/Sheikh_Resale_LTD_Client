@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
                 element: <AddProduct />
             },
             {
-                path: '/dashboard/manageProducts',
+                path: '/dashboard/myProducts',
                 element: <ManageProducts />
             }
         ]
