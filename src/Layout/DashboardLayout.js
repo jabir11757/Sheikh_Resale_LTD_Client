@@ -1,17 +1,27 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Navbar from '../pages/shared/Navbar/Navbar';
 
 const DashboardLayout = () => {
     return (
         <div>
-            <div className="tabs flex justify-center mt-5">
-                <div className="tabs">
-                    <Link to='/dashboard/sellers' className="tab tab-lg tab-lifted">Sellers</Link>
-                    <Link to='/dashboard/buyers' className="tab tab-lg tab-lifted tab-active">Buyers</Link>
-                    <Link to='/dashboard/allUsers' className="tab tab-lg tab-lifted">All Users</Link>
+            <Navbar />
+            <div className="drawer drawer-mobile">
+                <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
+                <div className="drawer-content">
+                    <Outlet />
+                </div>
+                <div className="drawer-side">
+                    <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
+                    <ul className="menu p-4 w-80  text-base-content">
+                        <li><Link to='/dashboard/sellers'>Sellers</Link></li>
+                        <li><Link to='/dashboard/buyers'>Buyers</Link></li>
+                        <li><Link to='/dashboard/addProducts'>Add Products</Link></li>
+                        <li><Link to='/dashboard/manageProducts'>Manage Products</Link></li>
+                    </ul>
+
                 </div>
             </div>
-            <Outlet />
         </div>
     );
 };

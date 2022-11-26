@@ -1,15 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import Main from "../../Layout/Main";
+import AddProduct from "../../pages/AddProduct/AddProduct";
 import Blogs from "../../pages/Blogs/Blogs";
-import AllUsers from "../../pages/Dashboard/AllUsers/AllUsers";
 import Buyers from "../../pages/Dashboard/Buyers/Buyers";
-import Dashboard from "../../pages/Dashboard/Dashboard/Dashboard";
 import Sellers from "../../pages/Dashboard/Sellers/Sellers";
 import Home from "../../pages/Home/Home/Home";
+import Categories from "../../pages/Home/Services/Categories/Categories";
 import Login from "../../pages/Login/Login";
 import DisplayError from "../../pages/shared/DisplayError/DisplayError";
 import Signup from "../../pages/Signup/Signup";
+import ManageProducts from "../../pages/Dashboard/ManageProducts/ManageProducts";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />
+            },
+            {
+                path: '/products/:id',
+                element: <Categories />,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
                 path: '/blogs',
@@ -49,9 +55,14 @@ export const router = createBrowserRouter([
                 element: <Buyers />
             },
             {
-                path: '/dashboard/allUsers',
-                element: <AllUsers />
+                path: '/dashboard/addProducts',
+                element: <AddProduct />
+            },
+            {
+                path: '/dashboard/manageProducts',
+                element: <ManageProducts />
             }
         ]
-    }
+    },
+
 ])
