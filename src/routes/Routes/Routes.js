@@ -11,6 +11,8 @@ import Login from "../../pages/Login/Login";
 import DisplayError from "../../pages/shared/DisplayError/DisplayError";
 import Signup from "../../pages/Signup/Signup";
 import MyProducts from "../../pages/Dashboard/MyProducts/MyProducts";
+import MyOrders from "../../pages/Dashboard/MyOrders/MyOrders";
+import Payment from "../../pages/Dashboard/Payment/Payment";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +49,10 @@ export const router = createBrowserRouter([
         errorElement: <DisplayError />,
         children: [
             {
+                path: '/dashboard/myProducts',
+                element: <MyProducts />
+            },
+            {
                 path: '/dashboard/sellers',
                 element: <Sellers />
             },
@@ -59,9 +65,14 @@ export const router = createBrowserRouter([
                 element: <AddProduct />
             },
             {
-                path: '/dashboard/myProducts',
-                element: <MyProducts />
+                path: '/dashboard/myOrders',
+                element: <MyOrders />
+            },
+            {
+                path: '/dashboard/payment',
+                element: <Payment />
             }
+
         ]
     },
 
