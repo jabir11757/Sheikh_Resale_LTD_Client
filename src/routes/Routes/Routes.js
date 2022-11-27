@@ -10,7 +10,7 @@ import Categories from "../../pages/Home/Services/Categories/Categories";
 import Login from "../../pages/Login/Login";
 import DisplayError from "../../pages/shared/DisplayError/DisplayError";
 import Signup from "../../pages/Signup/Signup";
-import ManageProducts from "../../pages/Dashboard/ManageProducts/ManageProducts";
+import MyProducts from "../../pages/Dashboard/MyProducts/MyProducts";
 
 export const router = createBrowserRouter([
     {
@@ -60,7 +60,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/myProducts',
-                element: <ManageProducts />
+                element: <MyProducts />
             }
         ]
     },
