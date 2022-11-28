@@ -22,7 +22,6 @@ const Login = () => {
 
     if (token) {
         navigate(from, { replace: true })
-
     }
 
 
@@ -40,6 +39,7 @@ const Login = () => {
                 console.log(user)
                 setLoginUserEmail(email)
                 toast.success('Logged in successfully!')
+                navigate('/')
             })
             .catch(err => {
                 console.log(err);

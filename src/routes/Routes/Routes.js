@@ -4,7 +4,6 @@ import Main from "../../Layout/Main";
 import AddProduct from "../../pages/AddProduct/AddProduct";
 import Blogs from "../../pages/Blogs/Blogs";
 import Buyers from "../../pages/Dashboard/Buyers/Buyers";
-import Sellers from "../../pages/Dashboard/Sellers/Sellers";
 import Home from "../../pages/Home/Home/Home";
 import Categories from "../../pages/Home/Services/Categories/Categories";
 import Login from "../../pages/Login/Login";
@@ -14,6 +13,8 @@ import MyProducts from "../../pages/Dashboard/MyProducts/MyProducts";
 import MyOrders from "../../pages/Dashboard/MyOrders/MyOrders";
 import PrivateRoute from '../PrivateRoute/PrivateRoute'
 import Payment from "../../pages/Dashboard/Payment/Payment";
+import AllSellers from "../../pages/Dashboard/AllSellers/AllSellers";
+import AdminRoute from "../AdminRoute/AdminRoute";
 
 export const router = createBrowserRouter([
     {
@@ -54,8 +55,8 @@ export const router = createBrowserRouter([
                 element: <MyProducts />
             },
             {
-                path: '/dashboard/sellers',
-                element: <Sellers />
+                path: '/dashboard/allSellers',
+                element: <AdminRoute><AllSellers /></AdminRoute>
             },
             {
                 path: '/dashboard/buyers',
@@ -71,7 +72,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/payment/:id',
-                element: <Payment />,
+                element: <PrivateRoute><Payment /></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
             }
 
