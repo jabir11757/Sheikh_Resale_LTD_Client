@@ -6,7 +6,7 @@ import { AuthContext } from '../../contexts/ProviderContext/ProviderContext';
 
 
 const Signup = () => {
-    const { createUser } = useContext(AuthContext)
+    const { createUser, updateUser } = useContext(AuthContext)
 
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [signUpError, setSignUpError] = useState('');
@@ -26,12 +26,36 @@ const Signup = () => {
             .then(result => {
                 const user = result.user;
                 toast.success('User created successfully!');
-                navigate('/')
-                console.log(user)
+                const userInfo = {
+                    displayName: name
+                }
+                updateUser(userInfo)
+                    .then(() => {
+                        saveUser()
+                    })
+                    .catch(err => console.error(err))
+                console.log('save user', user)
             })
             .catch(err => {
                 console.error(err)
                 setSignUpError(err.message)
+
+            })
+    }
+
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                navigate('/')
 
             })
     }
