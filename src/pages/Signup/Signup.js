@@ -7,7 +7,6 @@ import { AuthContext } from '../../contexts/ProviderContext/ProviderContext';
 
 const Signup = () => {
     const { createUser, updateUser } = useContext(AuthContext)
-
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [signUpError, setSignUpError] = useState('');
     const navigate = useNavigate();
@@ -31,10 +30,10 @@ const Signup = () => {
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        saveUser()
+                        saveUser(name, email)
                     })
                     .catch(err => console.error(err))
-                console.log('save user', user)
+                console.log(user)
             })
             .catch(err => {
                 console.error(err)
@@ -54,9 +53,20 @@ const Signup = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
-                navigate('/')
+                getUserToken(email)
 
+            })
+    }
+
+    const getUserToken = email => {
+        fetch(`http://localhost:5000/jwt?email=${email}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.accessToken) {
+                    localStorage.setItem('accessToken', data.accessToken);
+                    navigate('/')
+
+                }
             })
     }
 
