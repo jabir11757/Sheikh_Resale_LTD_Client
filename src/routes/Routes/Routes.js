@@ -12,6 +12,7 @@ import DisplayError from "../../pages/shared/DisplayError/DisplayError";
 import Signup from "../../pages/Signup/Signup";
 import MyProducts from "../../pages/Dashboard/MyProducts/MyProducts";
 import MyOrders from "../../pages/Dashboard/MyOrders/MyOrders";
+import PrivateRoute from '../PrivateRoute/PrivateRoute'
 import Payment from "../../pages/Dashboard/Payment/Payment";
 
 export const router = createBrowserRouter([
@@ -45,7 +46,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <DashboardLayout />,
+        element: <PrivateRoute><DashboardLayout /></PrivateRoute>,
         errorElement: <DisplayError />,
         children: [
             {
@@ -69,8 +70,9 @@ export const router = createBrowserRouter([
                 element: <MyOrders />
             },
             {
-                path: '/dashboard/payment',
-                element: <Payment />
+                path: '/dashboard/payment/:id',
+                element: <Payment />,
+                loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
             }
 
         ]
