@@ -1,8 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useState } from 'react';
+import Loading from '../../shared/Loading/Loading';
 import AddedProducts from './AddedProducts';
 
 const MyProducts = () => {
+    const [myProduct, setMyProduct] = useState([]);
+
 
     const { data: myProducts = [], isLoading, refetch } = useQuery({
         queryKey: ['addedProducts'],
@@ -12,6 +15,30 @@ const MyProducts = () => {
             return data;
         }
     })
+
+    const handleDelete = (id) => {
+        const proceed = window.confirm('Are you sure, you want to delete?');
+        if (proceed) {
+            fetch(`http://localhost:5000/addedProducts/${id}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.deletedCount > 0) {
+                        alert('Item Deleted!');
+                        const remaining = myProduct.filter(prd => prd._id !== id);
+                        setMyProduct(remaining)
+                        refetch()
+                    }
+                })
+        }
+
+    }
+
+    if (isLoading) {
+        return <Loading />
+    }
     return (
         <div className="overflow-x-auto">
             <h2 className='text-2xl font-bold text-success text-center mb-6'> My Products</h2>
@@ -27,7 +54,12 @@ const MyProducts = () => {
                 </thead>
                 <tbody>
                     {
-                        myProducts.map((product, index) => <AddedProducts key={product._id} index={index} product={product} />)
+                        myProducts.map((product, index) => <AddedProducts
+                            key={product._id}
+                            index={index}
+                            product={product}
+                            handleDelete={handleDelete}
+                        />)
                     }
                 </tbody>
             </table>

@@ -13,7 +13,7 @@ import MyProducts from "../../pages/Dashboard/MyProducts/MyProducts";
 import MyOrders from "../../pages/Dashboard/MyOrders/MyOrders";
 import PrivateRoute from '../PrivateRoute/PrivateRoute'
 import Payment from "../../pages/Dashboard/Payment/Payment";
-import AllSellers from "../../pages/Dashboard/AllSellers/AllSellers";
+import AllUsers from "../../pages/Dashboard/AllUsers/AllUsers";
 import AdminRoute from "../AdminRoute/AdminRoute";
 
 export const router = createBrowserRouter([
@@ -55,8 +55,8 @@ export const router = createBrowserRouter([
                 element: <MyProducts />
             },
             {
-                path: '/dashboard/allSellers',
-                element: <AdminRoute><AllSellers /></AdminRoute>
+                path: '/dashboard/allUsers',
+                element: <AdminRoute><AllUsers /></AdminRoute>
             },
             {
                 path: '/dashboard/buyers',

@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from 'firebase/auth';
+import { FacebookAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import toast from 'react-hot-toast';
@@ -8,8 +8,9 @@ import useToken from '../../hooks/useToken';
 
 const Login = () => {
 
-    const { signIn, googleSignIn } = useContext(AuthContext);
+    const { signIn, googleSignIn, facebookSignIn } = useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
 
 
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -23,9 +24,6 @@ const Login = () => {
     if (token) {
         navigate(from, { replace: true })
     }
-
-
-
 
     const handleLogin = (data) => {
         console.log(data)
@@ -55,6 +53,15 @@ const Login = () => {
                 const user = result.user;
                 navigate('/')
                 console.log(user);
+            })
+            .catch(err => console.error(err))
+    }
+
+    const handleFacebookSignIn = () => {
+        facebookSignIn(facebookProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
             })
             .catch(err => console.error(err))
     }
@@ -92,6 +99,7 @@ const Login = () => {
                 <p className='text-center my-3'>New to doctors portal ? <Link className='text-secondary' to='/signup'>Create account</Link></p>
                 <div className="divider">OR</div>
                 <button onClick={handleGoogleSignIn} className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                <button onClick={handleFacebookSignIn} className='btn btn-outline w-full mt-2'>CONTINUE with Facebook</button>
             </div>
         </div>
     );

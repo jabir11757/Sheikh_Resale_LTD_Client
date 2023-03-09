@@ -29,6 +29,10 @@ const ProviderContext = ({ children }) => {
         return signInWithPopup(auth, Provider)
     }
 
+    const facebookSignIn = (provider) => {
+        return signInWithPopup(auth, provider)
+    }
+
     const logOut = () => {
         return signOut(auth)
     }
@@ -42,7 +46,7 @@ const ProviderContext = ({ children }) => {
 
     }, [])
 
-    const userInfo = { createUser, updateUser, signIn, googleSignIn, user, loading, logOut };
+    const userInfo = { createUser, updateUser, signIn, googleSignIn, facebookSignIn, user, loading, logOut };
     return (
         <AuthContext.Provider value={userInfo}>
             {children}
