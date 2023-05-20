@@ -11,7 +11,7 @@ const ServiceItem = ({ service }) => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{name}</h2>
                 <div className="card-actions">
-                    <button className="btn btn-success"><Link to={`products/${_id}`}>see details</Link></button>
+                    <button className="btn btn-success"><Link to={`products/${_id}`}>details</Link></button>
                 </div>
             </div>
         </div>

@@ -1,18 +1,25 @@
 import React from 'react';
 import Processes from '../Processes/Processes';
 import ServiceItems from '../ServiceItems/ServiceItems/ServiceItems';
-import Services from '../Services/Services';
+// import Services from '../Services/Services';
 import Slider from '../Slider/Slider';
 import Subscribe from '../Subscribe/Subscribe';
+import OurServices from '../OurServices/OurServices';
+import AllProducts from '../AllProducts/AllProducts';
+import OurTeams from '../OurTeams/OurTeams';
+import "./Home.css"
 
 const Home = () => {
 
     return (
-        <div>
+        <div className='home'>
             <Slider />
-            <Services />
+            {/* <Services /> */}
             <ServiceItems />
+            <OurServices />
             <Processes />
+            <AllProducts />
+            <OurTeams />
             <Subscribe />
         </div>
     );
