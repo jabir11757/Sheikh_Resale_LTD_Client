@@ -31,13 +31,16 @@ const OurTeams = () => {
 
                             <div className="mt-2 md:mx-6">
                                 <div>
-                                    <p className="text-xl font-medium tracking-tight text-white">Abdullah Al-Mamun</p>
+                                    <p className="text-2xl font-medium tracking-tight text-white">Abdullah Al-Mamun</p>
                                     <p className="text-blue-300 ">MERN Stack Developer</p>
                                 </div>
 
-                                <p className="mt-4 text-white"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda”.</p>
+                                <p className="mt-4 text-white">I am a MERN Stack developer, I like to develop web applications with MERN
+                                    & many CSS component libraries (Tailwind CSS, Bootstrap). I also feel comfortable in team work.
+                                    I have completed my BSc in CSE and have an experience of frontend development (1.5 Years)
+                                    in a software company(Forbit LTD). I am always excited to explore new technologies.</p>
 
-                                <div className="flex items-center justify-between mt-6 md:justify-start">
+                                <div className="flex items-center justify-between mt-4 md:justify-start">
                                     {devData.map(dev =>
                                         <div className="flex space-x-4">
                                             <div className="flex items-center justify-center text-blue-100 hover:text-orange-600 hover:bg-blue-100 my-2 lg:mx-0 mx-6 border rounded-full h-8 w-8">
