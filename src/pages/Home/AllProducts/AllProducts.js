@@ -11,30 +11,54 @@ import img8 from "../../../images/bikes/suzuki.jpg"
 
 const AllProducts = () => {
 
-    const images = [
+    const cardItem = [
         {
-            image: img1
+            image: img8,
+            name: "Suzuki"
         },
         {
-            image: img2
+            image: img1,
+            name: "Yamaha"
         },
         {
-            image: img3
+            image: img2,
+            name: "BMW"
         },
         {
-            image: img4
+            image: img3,
+            name: "KTM"
         },
         {
-            image: img5
+            image: img4,
+            name: "TVS"
         },
         {
-            image: img6
+            image: img5,
+            name: "Honda"
         },
         {
-            image: img7
+            image: img6,
+            name: "CBR"
         },
         {
-            image: img8
+            image: img7,
+            name: "Hero"
+        },
+        {
+            image: img5,
+            name: "Lifan"
+        },
+        {
+            image: img6,
+            name: "Royal Infield"
+        },
+        {
+            image: img7,
+            name: "Vespa"
+        },
+        {
+            image: img8,
+            name: "Ducati"
         }
     ]
 
@@ -42,17 +66,32 @@ const AllProducts = () => {
         <div>
             <h1 className="text-3xl font-bold text-center my-10">Urgent Sales</h1>
             <section className="py-6">
-                <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-                    {/* <div className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square">hhhhhhhhhhhhhhhhhhhh</div> */}
-                    <img src={Yamaha} alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" />
+
+
+
+                <div className="container grid grid-cols-2 gap-4 bg-gray-500 mx-auto md:grid-cols-3">
                     {
-                        images.map(img =>
-                            <div>
-                                <img alt="" className="w-full h-full rounded shadow-sm min-h-48 aspect-square" src={img?.image} />
+                        cardItem.map(card =>
+
+                            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4">
+                                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style={{ backgroundImage: `url(${card.image})` }}></div>
+
+                                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">{card.name}</h3>
+
+                                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                                        <span class="font-bold text-gray-800 dark:text-gray-200">$2000</span>
+                                        <button class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">Contact</button>
+                                    </div>
+                                </div>
                             </div>
+
+
+                            // <div className="flex justify-center">
+                            //     <img alt="" className="rounded shadow-sm h-3/4 w-3/4 aspect-square" src={img?.image} />
+                            // </div>
                         )
                     }
-                    <img src={Yamaha} alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square" />
                 </div>
             </section>
         </div>
