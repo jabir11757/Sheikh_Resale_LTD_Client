@@ -4,28 +4,28 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
 
-        <footer aria-label="Site Footer" class="bg-white">
-            <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-                <div class="mx-auto max-w-md">
+        <footer aria-label="Site Footer" className="bg-white">
+            <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-md">
                     <strong
-                        class="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
+                        className="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
                     >
                         Want us to suggest or urgent solutions ?
                     </strong>
 
-                    <form class="mt-6">
-                        <div class="relative max-w-lg">
-                            <label class="sr-only" for="email"> Email </label>
+                    <form className="mt-6">
+                        <div className="relative max-w-lg">
+                            <label className="sr-only" for="email"> Email </label>
 
                             <input
-                                class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
+                                className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
                                 id="email"
                                 type="email"
-                                placeholder="john@doe.com"
+                                placeholder="sheikh@jabir.com"
                             />
 
                             <button
-                                class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-gray-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                                className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-gray-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
                             >
                                 Send
                             </button>
@@ -33,25 +33,25 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
-                    <div class="mx-auto max-w-sm lg:max-w-none">
-                        <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+                <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+                    <div className="mx-auto max-w-sm lg:max-w-none">
+                        <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
                             natus quod eveniet aut perferendis distinctio iusto repudiandae,
                             provident velit earum?
                         </p>
 
-                        <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+                        <div className="mt-6 flex justify-center gap-4 lg:justify-start">
                             <Link
-                                class="text-gray-700 transition hover:text-gray-700/75"
+                                className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="sr-only"> Facebook </span>
+                                <span className="sr-only"> Facebook </span>
 
                                 <svg
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -65,15 +65,15 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                class="text-gray-700 transition hover:text-gray-700/75"
+                                className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="sr-only"> Instagram </span>
+                                <span className="sr-only"> Instagram </span>
 
                                 <svg
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -87,15 +87,15 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                class="text-gray-700 transition hover:text-gray-700/75"
+                                className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="sr-only"> Twitter </span>
+                                <span className="sr-only"> Twitter </span>
 
                                 <svg
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -107,15 +107,15 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                class="text-gray-700 transition hover:text-gray-700/75"
+                                className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="sr-only"> GitHub </span>
+                                <span className="sr-only"> GitHub </span>
 
                                 <svg
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -129,15 +129,15 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                class="text-gray-700 transition hover:text-gray-700/75"
+                                className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="sr-only"> Dribbble </span>
+                                <span className="sr-only"> Dribbble </span>
 
                                 <svg
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -153,68 +153,68 @@ const Footer = () => {
                     </div>
 
                     <div
-                        class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left"
+                        className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left"
                     >
                         <div>
-                            <strong class="font-medium text-gray-900"> Services </strong>
+                            <strong className="font-medium text-gray-900"> Services </strong>
 
                             <nav
                                 aria-label="Footer Services Nav"
-                                class="mt-6 flex flex-col space-y-1"
+                                className="mt-6 flex flex-col space-y-1"
                             >
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Marketing
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Graphic Design
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     App Development
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Web Development
                                 </Link>
                             </nav>
                         </div>
 
                         <div>
-                            <strong class="font-medium text-gray-900"> About </strong>
+                            <strong className="font-medium text-gray-900"> About </strong>
 
                             <nav
                                 aria-label="Footer About Nav"
-                                class="mt-6 flex flex-col space-y-1"
+                                className="mt-6 flex flex-col space-y-1"
                             >
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     About
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Careers
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     History
                                 </Link>
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Our Team
                                 </Link>
                             </nav>
                         </div>
 
                         <div>
-                            <strong class="font-medium text-gray-900"> Support </strong>
+                            <strong className="font-medium text-gray-900"> Support </strong>
 
                             <nav
                                 aria-label="Footer Support Nav"
-                                class="mt-6 flex flex-col space-y-1"
+                                className="mt-6 flex flex-col space-y-1"
                             >
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     FAQs
                                 </Link>
 
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Contact
                                 </Link>
 
-                                <Link class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                                     Live Chat
                                 </Link>
                             </nav>
@@ -222,8 +222,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="mt-16 border-t border-gray-100 pt-8">
-                    <p class="text-center text-xs/relaxed text-gray-500">
+                <div className="mt-16 border-t border-gray-100 pt-8">
+                    <p className="text-center text-xs/relaxed text-gray-500">
                         © Company 2022. All rights reserved.
 
                         <br />
@@ -231,13 +231,13 @@ const Footer = () => {
                         Created with
                         <Link
                             href=""
-                            class="text-gray-700 underline transition hover:text-gray-700/75"
+                            className="text-gray-700 underline transition hover:text-gray-700/75"
                         >Laravel</Link
                         >
                         and
                         <Link
                             href=""
-                            class="text-gray-700 underline transition hover:text-gray-700/75"
+                            className="text-gray-700 underline transition hover:text-gray-700/75"
                         >Laravel Livewire</Link
                         >.
                     </p>

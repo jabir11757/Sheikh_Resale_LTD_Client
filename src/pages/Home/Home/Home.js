@@ -8,6 +8,7 @@ import OurServices from '../OurServices/OurServices';
 import AllProducts from '../AllProducts/AllProducts';
 import OurTeams from '../OurTeams/OurTeams';
 import "./Home.css"
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
             <Processes />
             <AllProducts />
             <OurTeams />
+            <Reviews />
             <Subscribe />
         </div>
     );

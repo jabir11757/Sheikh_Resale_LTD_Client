@@ -13,8 +13,8 @@ const Slider = () => {
                         Similique quas ea veniam Tempore quasi porro Blanditiis aut mollitia ex
                     </p>
                     <div className='mt-4'>
-                        <button className='h-12 w-32 text-white bg-gray-700 rounded'>Button</button>
-                        <button className='h-12 w-32 text-white bg-gray-700 rounded mx-2'>Button</button>
+                        <button className='h-12 w-32 text-white hover:text-gray-600 bg-gray-600 hover:bg-gray-200 rounded'>Button</button>
+                        <button className='h-12 w-32 text-gray-600 hover:text-gray-200 bg-gray-200 hover:bg-gray-600 rounded mx-2'>Button</button>
                     </div>
                 </div>
             </div>

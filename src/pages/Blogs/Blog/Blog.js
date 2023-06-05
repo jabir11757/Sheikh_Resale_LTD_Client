@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
     return (
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 py-5 gap-5">
-            <div className="card bg-green-100 shadow-xl">
+            <div className="card bg-gray-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">
                         What are the different ways to manage a state in a React application?
@@ -17,7 +17,7 @@ const Blog = () => {
                     </p>
                 </div>
             </div>
-            <div className="card bg-green-100 shadow-xl">
+            <div className="card bg-gray-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">How does prototypical inheritance work?</h2>
                     <p>
@@ -29,7 +29,7 @@ const Blog = () => {
                     </p>
                 </div>
             </div>
-            <div className="card bg-green-100 shadow-xl">
+            <div className="card bg-gray-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">
                         What is a unit test? Why should we write unit tests?
