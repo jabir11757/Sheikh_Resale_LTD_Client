@@ -11,6 +11,7 @@ import Avatar from "../../images/Sheikh_Jabir.jpg";
 import Avatar2 from "../../images/jabir2.jpg";
 import Avatar3 from "../../images/jabir3.jpg";
 import Avatar4 from "../../images/jabir4.jpg";
+import Chat from "../../images/chat.png";
 
 const Messages = () => {
   const messageData = [
@@ -63,7 +64,7 @@ const Messages = () => {
 
         {/* message lists */}
         {messageData.map((data) => (
-          <div className="border-y-2">
+          <div className="border-y-2 hover:bg-gray-100">
             <div className="flex py-2">
               <img className="h-16 w-16 rounded-full" src={data.image} alt="" />
               <div className="mx-4 mt-2">
@@ -79,33 +80,33 @@ const Messages = () => {
           {/* right side nav */}
           <nav
             aria-label="Site Nav"
-            class="flex items-center justify-between border-y-2 py-1"
+            className="flex items-center justify-between border-y-2 py-1"
           >
-            <div>
-              <div className="flex py-2">
+            <button>
+              <div className="flex py-2 hover:bg-gray-100 rounded-md">
                 <img className="h-14 w-14 rounded-full" src={Avatar} alt="" />
                 <div className="mx-4 mt-1">
                   <div className="text-xl">Sheikh Jabir Bin Osman</div>
-                  <div>Active 30m ago</div>
+                  <div className="text-start">Active 30m ago</div>
                 </div>
               </div>
-            </div>
-            <ul class="flex items-center space-x-8 text-sm font-medium text-gray-500">
-              <li class="hidden lg:block">
-                <Link class="rounded-lg px-3 py-2" href="/">
-                  <FaPhoneAlt className="h-7 w-7 text-gray-700" />
+            </button>
+            <ul className="flex items-center space-x-8 text-sm font-medium text-gray-500">
+              <li>
+                <Link className="rounded-lg px-3 py-2" href="/">
+                  <FaPhoneAlt className="h-7 w-7 text-gray-700 hover:text-gray-600" />
                 </Link>
               </li>
 
               <li>
-                <Link class="rounded-lg px-3 py-2" href="">
-                  <FaVideo className="h-7 w-7 text-gray-700" />
+                <Link className="rounded-lg px-3 py-2" href="">
+                  <FaVideo className="h-7 w-7 text-gray-700 hover:text-gray-600" />
                 </Link>
               </li>
 
               <li>
-                <Link class="rounded-lg px-3 py-2" href="">
-                  <FaInfoCircle className="h-7 w-7 text-gray-700" />
+                <Link className="rounded-lg px-3 py-2" href="">
+                  <FaInfoCircle className="h-7 w-7 text-gray-700 hover:text-gray-600" />
                 </Link>
               </li>
             </ul>
@@ -113,7 +114,9 @@ const Messages = () => {
         </div>
 
         {/* messages */}
-        <div>Down</div>
+        <div>
+          <img className="w-full h-full -mt-1" src={Chat} alt="" />
+        </div>
       </div>
     </div>
   );

@@ -1,30 +1,29 @@
-import React from 'react';
-import Processes from '../Processes/Processes';
-import ServiceItems from '../ServiceItems/ServiceItems/ServiceItems';
+import React from "react";
+import Processes from "../Processes/Processes";
+import ServiceItems from "../ServiceItems/ServiceItems/ServiceItems";
 // import Services from '../Services/Services';
-import Slider from '../Slider/Slider';
-import Subscribe from '../Subscribe/Subscribe';
-import OurServices from '../OurServices/OurServices';
-import AllProducts from '../AllProducts/AllProducts';
-import OurTeams from '../OurTeams/OurTeams';
-import "./Home.css"
-import Reviews from '../Reviews/Reviews';
+import Banner from "../Banner/Banner";
+import Subscribe from "../Subscribe/Subscribe";
+import OurServices from "../OurServices/OurServices";
+import OurTeams from "../OurTeams/OurTeams";
+import "./Home.css";
+import Reviews from "../Reviews/Reviews";
+import UrgentSells from "../AllProducts/UrgentSells";
 
 const Home = () => {
-
-    return (
-        <div className='home'>
-            <Slider />
-            {/* <Services /> */}
-            <ServiceItems />
-            <OurServices />
-            <Processes />
-            <AllProducts />
-            <OurTeams />
-            <Reviews />
-            <Subscribe />
-        </div>
-    );
+  return (
+    <div className="home">
+      <Banner />
+      {/* <Services /> */}
+      <ServiceItems />
+      <OurServices />
+      <Processes />
+      <UrgentSells />
+      <OurTeams />
+      <Reviews />
+      <Subscribe />
+    </div>
+  );
 };
 
 export default Home;
