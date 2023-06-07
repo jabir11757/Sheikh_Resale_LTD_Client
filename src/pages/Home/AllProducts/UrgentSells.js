@@ -8,6 +8,7 @@ import img5 from "../../../images/bikes/honda.jpg";
 import img6 from "../../../images/bikes/ktm.jpg";
 import img7 from "../../../images/bikes/bmw.jpg";
 import img8 from "../../../images/bikes/suzuki.jpg";
+import { Link } from "react-router-dom";
 
 const UrgentSells = () => {
   const cardItem = [
@@ -65,10 +66,10 @@ const UrgentSells = () => {
     <div>
       <h1 className="text-3xl font-bold text-center my-10">Urgent Sales</h1>
       <section className="py-6">
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-gray-500 mx-auto ">
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto ">
           {cardItem.map(
             (card) => (
-              <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4">
+              <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4 rounded-2xl shadow-2xl">
                 <div
                   className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
                   style={{ backgroundImage: `url(${card.image})` }}
@@ -83,9 +84,11 @@ const UrgentSells = () => {
                     <span className="font-bold text-gray-800 dark:text-gray-200">
                       $2000
                     </span>
-                    <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
-                      Contact
-                    </button>
+                    <Link to="/messages">
+                      <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+                        Contact
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

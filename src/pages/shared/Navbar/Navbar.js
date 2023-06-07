@@ -89,8 +89,11 @@ const Navbar = () => {
             {menuItem}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Sheikh Reseller LTD
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-2xl font-bold border border-gray-200 hover:bg-gray-50 rounded-full"
+        >
+          Sheikh Resale Ltd
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
