@@ -82,7 +82,7 @@ const Messages = () => {
             aria-label="Site Nav"
             className="flex items-center justify-between border-y-2 py-1"
           >
-            <button>
+            <Link to="/">
               <div className="flex py-2 hover:bg-gray-100 rounded-md">
                 <img className="h-14 w-14 rounded-full" src={Avatar} alt="" />
                 <div className="mx-4 mt-1">
@@ -90,7 +90,7 @@ const Messages = () => {
                   <div className="text-start">Active 30m ago</div>
                 </div>
               </div>
-            </button>
+            </Link>
             <ul className="flex items-center space-x-8 text-sm font-medium text-gray-500">
               <li>
                 <Link className="rounded-lg px-3 py-2" href="/">

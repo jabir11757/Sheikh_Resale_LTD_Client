@@ -8,7 +8,7 @@ import OurServices from "../OurServices/OurServices";
 import OurTeams from "../OurTeams/OurTeams";
 import "./Home.css";
 import Reviews from "../Reviews/Reviews";
-import UrgentSells from "../AllProducts/UrgentSells";
+import UrgentSells from "../UrgentSells/UrgentSells";
 
 const Home = () => {
   return (

@@ -14,31 +14,60 @@ const Navbar = () => {
   const menuItem = (
     <React.Fragment>
       <li>
-        <Link className="text-xl text-blue-600" to="/">
+        <Link
+          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          to="/"
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link className="text-xl text-blue-600" to="/blogs">
+        <Link
+          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          to="/products"
+        >
+          Products
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          to="/blogs"
+        >
           Blogs
         </Link>
       </li>
       <li>
-        <Link className="text-xl text-blue-600" to="/products">
-          Products
+        <Link
+          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          to="/campaign"
+        >
+          Campaign
         </Link>
       </li>
+      <li>
+        <Link
+          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          to="/contacts"
+        >
+          Contact
+        </Link>
+      </li>
+
       {user?.uid ? (
         <>
           <li>
-            <Link className="text-xl text-blue-600" to="/dashboard">
+            <Link
+              className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+              to="/dashboard"
+            >
               Dashboard
             </Link>
           </li>
           <li>
             {" "}
             <button
-              className="text-white bg-gray-600 rounded-lg"
+              className="text-white bg-gray-600 rounded-xl"
               onClick={handleSignOut}
             >
               Sign Out
@@ -49,7 +78,7 @@ const Navbar = () => {
         <li>
           {" "}
           <Link
-            className="text-xl text-blue-600 rounded-lg hover:bg-gray-600 hover:text-white hover:rounded-lg"
+            className="text-xl font-semibold rounded-xl hover:bg-green-600 hover:text-white ml-2"
             to="/login"
           >
             Login
@@ -91,7 +120,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case text-2xl font-bold border border-gray-200 hover:bg-gray-50 rounded-full"
+          className="btn btn-ghost normal-case text-2xl font-semibold border border-gray-200 hover:bg-gray-50 rounded-full"
         >
           Sheikh Resale Ltd
         </Link>

@@ -26,7 +26,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-end lg:mr-12 mr-4">
         <div
           style={{
             borderTopRightRadius: "200px",

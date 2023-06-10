@@ -8,7 +8,7 @@ const Processes = () => {
       title: "Find your best choice",
       contact: "+88010002000",
       description:
-        "Search bikes near you, by height or any bike attribute. Any question? Ask it via the yellow button!",
+        "Search bikes near you, by height or any bike attribute. Any question? Ask it via contact page.",
     },
     {
       id: 2,
@@ -22,7 +22,28 @@ const Processes = () => {
       title: "Confirm Order",
       contact: "+88010002000",
       description:
-        "Happy with the bike? Then confirm to pay the seller. If not, you cancel and the deposit is refunded entirely.At any point before confirming, you can switch to another bike.",
+        "After choosing your bike, confirm your order with your valid address and available contact information.",
+    },
+    {
+      id: 4,
+      title: "Receive Order",
+      contact: "+88010002000",
+      description:
+        "Check your bike carefully during receive it & make sure for preview 10 days promises.",
+    },
+    {
+      id: 5,
+      title: "Preview for 10 days",
+      contact: "+88010002000",
+      description:
+        "You can check performance of your bike for 10 days. If found any problem, then within 10 days, you can exchange or refund it.",
+    },
+    {
+      id: 6,
+      title: "Submit Feedback",
+      contact: "+88010002000",
+      description:
+        "If you happy with our services, then put a feedback. Your valuable feedback is important for our services.",
     },
   ];
   return (

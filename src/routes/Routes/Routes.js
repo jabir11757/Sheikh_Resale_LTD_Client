@@ -16,6 +16,8 @@ import Payment from "../../pages/Dashboard/Payment/Payment";
 import AllUsers from "../../pages/Dashboard/AllUsers/AllUsers";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import Messages from "../../pages/Message/Messages";
+import Campaign from "../../pages/Campaign/Campaign";
+import Contacts from "../../pages/Contacts/Contacts";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/campaign",
+        element: <Campaign />,
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
       },
       {
         path: "/messages",
