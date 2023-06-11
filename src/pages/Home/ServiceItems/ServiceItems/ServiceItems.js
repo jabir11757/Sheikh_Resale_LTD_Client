@@ -8,7 +8,9 @@ const ServiceItems = () => {
   const { data: services = [], isLoading } = useQuery({
     queryKey: ["services"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/products");
+      const res = await fetch(
+        "https://assignment-product-resale-server-jabir11757.vercel.app/products"
+      );
       const data = await res.json();
       console.log(data);
       return data;

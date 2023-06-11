@@ -1,7 +1,6 @@
 // import React, { useEffect, useState } from 'react';
 // import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 
-
 // const CheckOutForm = ({ booking }) => {
 //     const [cardError, setCardError] = useState('');
 //     const [success, setSuccess] = useState('');
@@ -15,7 +14,7 @@
 
 //     useEffect(() => {
 //         // Create PaymentIntent as soon as the page loads
-//         fetch("http://localhost:5000/create-payment-intent", {
+//         fetch("https://assignment-product-resale-server-jabir11757.vercel.app/create-payment-intent", {
 //             method: "POST",
 //             headers: {
 //                 "Content-Type": "application/json",
@@ -81,7 +80,7 @@
 //                 bookingId: _id
 //             }
 
-//             fetch('http://localhost:5000/payments', {
+//             fetch('https://assignment-product-resale-server-jabir11757.vercel.app/payments', {
 //                 method: 'POST',
 //                 headers: {
 //                     'content-type': 'application/json',
@@ -101,7 +100,6 @@
 //         setProcessing(false)
 
 //     }
-
 
 //     return (
 //         <>

@@ -33,7 +33,9 @@ export const router = createBrowserRouter([
         path: "/products/:id",
         element: <Categories />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(
+            `https://assignment-product-resale-server-jabir11757.vercel.app/products/${params.id}`
+          ),
       },
       {
         path: "/blogs",
@@ -102,7 +104,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/bookings/${params.id}`),
+          fetch(
+            `https://assignment-product-resale-server-jabir11757.vercel.app/bookings/${params.id}`
+          ),
       },
     ],
   },
