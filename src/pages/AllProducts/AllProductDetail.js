@@ -14,7 +14,7 @@ const AllProductDetail = ({ productDetails }) => {
     purchaseYear,
   } = productDetails;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl my-16">
+    <div className="card w-96 bg-base-100 shadow-2xl my-12 mx-16">
       <div className="card-body">
         <h2 className="text-green-600">
           Post Time: <span className="text-black">{postTime}</span>

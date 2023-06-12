@@ -19,7 +19,6 @@ import Messages from "../../pages/Message/Messages";
 import Campaign from "../../pages/Campaign/Campaign";
 import Contacts from "../../pages/Contacts/Contacts";
 import AllProducts from "../../pages/AllProducts/AllProducts";
-import AllProduct from "../../pages/AllProducts/AllProduct";
 import AllProductsDetail from "../../pages/AllProducts/AllProductsDetail";
 
 export const router = createBrowserRouter([
@@ -59,10 +58,6 @@ export const router = createBrowserRouter([
       {
         path: "/allProducts",
         element: <AllProducts />,
-        loader: () =>
-          fetch(
-            "https://assignment-product-resale-server-jabir11757.vercel.app/allProducts"
-          ),
       },
       {
         path: "/allProducts/:id",

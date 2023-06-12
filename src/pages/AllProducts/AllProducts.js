@@ -20,10 +20,17 @@ const AllProducts = () => {
   }
 
   return (
-    <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-      {allProducts.map((allProducts) => (
-        <AllProduct key={allProducts._id} allProducts={allProducts} />
-      ))}
+    <div>
+      <div>
+        <p className="text-3xl font-bold text-center mt-2 mb-16">
+          All Products
+        </p>
+      </div>
+      <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+        {allProducts.map((allProducts) => (
+          <AllProduct key={allProducts._id} allProducts={allProducts} />
+        ))}
+      </div>
     </div>
   );
 };

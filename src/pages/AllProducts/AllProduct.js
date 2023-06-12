@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AllProduct = ({ allProducts }) => {
+  console.log(allProducts._id);
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4">
       <div
@@ -15,7 +16,7 @@ const AllProduct = ({ allProducts }) => {
         </h3>
 
         <div className="flex items-center justify-between px-3 py-2 bg-gray-300 dark:bg-gray-700">
-          <Link to={`allProducts/${allProducts?._id}`}>
+          <Link to={`/allProducts/${allProducts._id}`}>
             <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
               View Details
             </button>

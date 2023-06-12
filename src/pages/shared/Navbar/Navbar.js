@@ -24,7 +24,7 @@ const Navbar = () => {
       <li>
         <Link
           className="text-xl active:bg-gray-500 active:text-white rounded-xl"
-          to="/products"
+          to="/allProducts"
         >
           Products
         </Link>
