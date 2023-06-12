@@ -1,6 +1,6 @@
 import React from "react";
 
-const Category = ({ category, setItem }) => {
+const AllProductDetail = ({ productDetails }) => {
   const {
     productName,
     postTime,
@@ -12,7 +12,7 @@ const Category = ({ category, setItem }) => {
     useYear,
     mobileNumber,
     purchaseYear,
-  } = category;
+  } = productDetails;
   return (
     <div className="card w-96 bg-base-100 shadow-xl my-16">
       <div className="card-body">
@@ -46,7 +46,6 @@ const Category = ({ category, setItem }) => {
           Contact: <span className="text-black">{mobileNumber}</span>
         </h2>
         <label
-          onClick={() => setItem(category)}
           htmlFor="booking-modal"
           className="btn btn-outline btn-success mt-6"
         >
@@ -61,4 +60,4 @@ const Category = ({ category, setItem }) => {
   );
 };
 
-export default Category;
+export default AllProductDetail;
