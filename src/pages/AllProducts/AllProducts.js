@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import Loading from "../shared/Loading/Loading";
 import AllProduct from "./AllProduct";
+import bgImage from "../../images/full-bg.png";
 
 const AllProducts = () => {
   const { data: allProducts = [], isLoading } = useQuery({
@@ -20,9 +21,9 @@ const AllProducts = () => {
   }
 
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${bgImage})` }}>
       <div>
-        <p className="text-3xl font-bold text-center mt-2 mb-16">
+        <p className="text-3xl font-bold text-center w-1/6 mx-auto py-2 mt-8 mb-16 border-2 border-gray-300 hover:bg-gray-400 hover:text-white rounded-full transition ease-in-out delay-100 hover:translate-x-1">
           All Products
         </p>
       </div>

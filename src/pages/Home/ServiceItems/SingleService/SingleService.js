@@ -5,7 +5,7 @@ const SingleService = ({ service }) => {
   const { name, picture, _id } = service;
 
   return (
-    <div className="space-y-3 space-x-6">
+    <div className="space-y-3 space-x-6 skew-y-6">
       <div>
         {/* image */}
         <div>

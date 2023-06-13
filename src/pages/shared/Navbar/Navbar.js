@@ -15,7 +15,7 @@ const Navbar = () => {
     <React.Fragment>
       <li>
         <Link
-          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
           to="/"
         >
           Home
@@ -23,7 +23,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
           to="/allProducts"
         >
           Products
@@ -31,7 +31,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
           to="/blogs"
         >
           Blogs
@@ -39,7 +39,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
           to="/campaign"
         >
           Campaign
@@ -47,7 +47,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+          className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
           to="/contacts"
         >
           Contact
@@ -58,7 +58,7 @@ const Navbar = () => {
         <>
           <li>
             <Link
-              className="text-xl active:bg-gray-500 active:text-white rounded-xl"
+              className="text-xl active:bg-gray-300 mx-2 active:text-white rounded-xl"
               to="/dashboard"
             >
               Dashboard

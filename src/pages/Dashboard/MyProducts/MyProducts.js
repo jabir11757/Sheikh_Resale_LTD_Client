@@ -48,7 +48,7 @@ const MyProducts = () => {
   }
   return (
     <div className="overflow-x-auto">
-      <h2 className="text-2xl font-bold text-success text-center mb-6">
+      <h2 className="text-2xl font-bold text-gray-700 text-center mt-4 mb-16">
         {" "}
         My Products
       </h2>

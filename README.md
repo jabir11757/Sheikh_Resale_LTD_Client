@@ -1,11 +1,9 @@
 ---
-
-> Its a bike resale website, where anybody can buy or sell bike.
-> From anywhere in Bangladesh, you can buy or sale your choosing bike.
-> Seller's & buyer's data will be highly protected.
-> You have to talk with your buyers or Users, admin or authority won't interfere there.
-> You will object our team or suggest us to develop our services.
-
+-> Its a bike resale website, where anybody can buy or sell bike.
+-> From anywhere in Bangladesh, you can buy or sale your choosing bike.
+-> Seller's & buyer's data will be highly protected.
+-> You have to talk with your buyers or Users, admin or authority won't interfere there.
+-> You will object our team or suggest us to develop our services.
 ---
 
 ---

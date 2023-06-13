@@ -57,7 +57,7 @@ const AddProduct = () => {
   };
   return (
     <div className="w-96 p-7 mx-auto">
-      <h2 className="text-2xl text-success font-bold text-center mb-6">
+      <h2 className="text-2xl text-gray-700 font-bold text-center mb-12">
         {" "}
         Add Products
       </h2>
@@ -180,11 +180,7 @@ const AddProduct = () => {
             <p className="text-red-600">{errors.image?.message}</p>
           )}
         </div>
-        <input
-          className="btn btn-success mt-5 w-full"
-          value="Add Product"
-          type="submit"
-        />
+        <input className="btn mt-5 w-full" value="Add Product" type="submit" />
       </form>
     </div>
   );

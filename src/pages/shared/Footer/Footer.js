@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-white">
+    <footer aria-label="Site Footer" className="bg-white mt-16">
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-md">
           <strong className="block text-center text-xl font-bold text-gray-900 sm:text-3xl">
@@ -24,7 +24,7 @@ const Footer = () => {
                 placeholder="sheikh@jabir.com"
               />
 
-              <button className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-gray-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700">
+              <button className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-gray-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-gray-700">
                 Send
               </button>
             </div>
@@ -34,9 +34,8 @@ const Footer = () => {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">
             <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Praesentium natus quod eveniet aut perferendis distinctio iusto
-              repudiandae, provident velit earum?
+              If you'd like to know more about us, please feel free to get in
+              touch. Also you can do like to our social media pages
             </p>
 
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
@@ -96,7 +95,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <Link
+              <a
                 className="text-gray-700 transition hover:text-gray-700/75"
                 href="https://github.com/jabir11757"
               >
@@ -114,9 +113,9 @@ const Footer = () => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
 
-              <Link
+              <a
                 className="text-gray-700 transition hover:text-gray-700/75"
                 href="https://my-portfolio-e325c.web.app"
               >
@@ -134,7 +133,7 @@ const Footer = () => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -156,19 +155,13 @@ const Footer = () => {
                   className="text-gray-700 transition hover:text-gray-700/75"
                   href="/"
                 >
-                  Resale Bike
+                  Safe Delivery
                 </Link>
                 <Link
                   className="text-gray-700 transition hover:text-gray-700/75"
                   href="/"
                 >
-                  Resale Bike
-                </Link>
-                <Link
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
-                  Resale Bike
+                  Preview 10 Days
                 </Link>
               </nav>
             </div>
