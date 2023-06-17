@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AllProduct = ({ allProducts }) => {
   console.log(allProducts._id);
   return (
-    <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4 transition ease-in-out delay-100 hover:translate-x-2">
+    <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto my-4 transition ease-in-out delay-100 duration-1000 hover:translate-x-2">
       <div
         className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-2xl"
         style={{ backgroundImage: `url(${allProducts?.picture})` }}

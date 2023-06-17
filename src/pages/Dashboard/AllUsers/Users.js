@@ -22,6 +22,24 @@ const Users = ({ users, index, refetch }) => {
         }
       });
   };
+  const handleMakeSeller = (id) => {
+    fetch(
+      `https://assignment-product-resale-server-jabir11757.vercel.app/users/seller/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          authorization: `bearer ${localStorage.getItem("accessToken")}`,
+        },
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.modifiedCount > 0) {
+          toast.success("Make seller successful");
+          refetch();
+        }
+      });
+  };
   return (
     <tr>
       <th>{index + 1}</th>
@@ -38,7 +56,12 @@ const Users = ({ users, index, refetch }) => {
         )}
       </td>
       <td>
-        <button className="btn btn-success btn-xs">Make Seller</button>
+        <button
+          onClick={() => handleMakeSeller(_id)}
+          className="btn btn-success btn-xs"
+        >
+          Make Seller
+        </button>
       </td>
       <td>
         <button className="btn btn-error btn-xs">delete</button>

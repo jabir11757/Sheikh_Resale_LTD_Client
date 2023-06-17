@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
       </li>
 
-      {user?.uid ? (
+      {user?.uid === "admin" ? (
         <>
           <li>
             <Link
